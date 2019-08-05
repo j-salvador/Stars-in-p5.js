@@ -41,15 +41,14 @@ function setup () {
 function draw () {
   let bg = map(mouseX, 0, 20, 0, 1);
   // fill(237, 50, 71, bg/2);
-  fill(0);
+  // fill(0);
   background(20);
   rect(0, 0, canvasWidth, canvasHeight);
   noStroke();
   // let mouse_var = map(mouseX, 0, 1, 0, 1);
 
-  // draw_planets();
-  // fill(255); //uncomment for planet overlay "looking into stars"
-  fill(255);
+  draw_planets();
+  fill(255); //uncomment for planet overlay "looking into stars"
 
   for(let i = 0; i < num_of_stars; i++){
     if(speed[i] <= 0.25*max_speed){
